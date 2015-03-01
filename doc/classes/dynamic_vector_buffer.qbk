@@ -42,7 +42,7 @@ requirements.dynamic_buffers `DynamicBufferSequence`].
   } // namespace std
 
 The `dynamic_vector_buffer` class template requires that `T` is a trivially
-copyable type and that `sizeof(T) == 1`.
+copyable or standard-layout type, and that `sizeof(T) == 1`.
 
 [section [^dynamic_vector_buffer] constructors]
 [xrefid buffer.dynamic.vector.cons]
